@@ -7,7 +7,7 @@
 <img src="https://user-images.githubusercontent.com/56459297/135469032-4848e078-ca24-4a01-9e0b-98e19c943b45.jpg">
 <h2>Termux installation </h2>
 
-```
-git clone 
-```
+
+* `git clone  `
+
 
