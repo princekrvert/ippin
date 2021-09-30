@@ -13,5 +13,7 @@
 * `npm install`
 * `chmod +x *`
 * `node ippin Targetip`
+<h3> Screenshot </h3>
+<img src="https://user-images.githubusercontent.com/56459297/135476823-24c42083-59f2-4e1b-9f70-3124f03ba1c9.jpg" width="250" height="250">
 
 
