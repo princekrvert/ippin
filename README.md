@@ -10,6 +10,8 @@
 * `pkg install nodejs`
 * `git clone https://github.com/princekrvert/ippin.git`
 * `cd ippin`
+* `npm install`
 * `chmod +x *`
+* `node ippin Targetip`
 
 
