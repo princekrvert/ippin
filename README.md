@@ -12,7 +12,7 @@
 * `cd ippin`
 * `npm install`
 * `chmod +x *`
-* `node ippin Targetip`
+* `node ippin -i <ipaddress>`
 <h3> Screenshot </h3>
 
 
