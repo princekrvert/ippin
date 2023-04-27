@@ -3,6 +3,19 @@
 //#Import all modules...
 const chalk = require("chalk")
 const axios = require("axios")
+const { Command } = require('commander');
+const program = new Command();
+
+program
+  .name('ippin')
+  .description('Track IPv4 and IPv6 with realtime location.')
+  .version('1.0.1');
+
+  program
+  .option('-i, --ip [string]', 'Enter a ip address to track');
+
+program.parse(process.argv);
+const options = program.opts();
 //Make a function For bamner....
 function banner(){
 	console.clear()
@@ -17,14 +30,14 @@ function banner(){
 banner()
 
 //Habdle the user argument...
-if (process.argv[2] == "-h" || process.argv[2] == "--help"){
-	setTimeout(() => {console.log("Run this script like this.👇"); },500);
-setTimeout(() => {console.log(chalk.white("node ippin Victim_ip")); },1000);	
-}
+if ( !options.ip ){
+	console.log("Uses use ./ippin --help or -h ");
+	console.log("./ippin -i <ip address>");
+} 
 else
 {
-	tIp = process.argv[2]
-	trackIp(tIp);// Take Target ip to handle the request...
+	
+	trackIp(options.ip);// Take Target ip to handle the request...
 
 }
 function trackIp(tIp){
